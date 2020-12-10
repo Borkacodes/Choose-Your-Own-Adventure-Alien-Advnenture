@@ -1,0 +1,91 @@
+print("Text adventure presents: Alien Investigation")
+print("you have been chosen for a top secret mission")
+print("but before we tell you what to do please type in your name or code name")
+print("**IMPORTANT** use lowercase a or b for answering")
+n = str(input("Enter name or nickname: "))
+print("Successfully Received! We may now begin")
+print("You wake up, you don't remember a thing")
+print("The first thing you is look outside of your house.")
+print("You see your neighbor looking up as if stargazing, but it is noon")
+print("You look again and you hear he is talking in a weird lanuage you never heard")
+print(n,"? A voice rings out behind you. ")
+print("Its the neighbor! But you can't see them. What do you do?")
+
+A1 = str(input("Go over to their house (a) Call police (b)"))
+if A1 == "a":
+        print("You decide to go to your neighbor house to check on them")
+        print("but before you go there you decide to bake some cookies")
+        print("you ring the door bell, but no answer")
+        print("you ring again and someone comes. he let you in the house")
+        print("You look around the house nothing see interesting")
+        print("But then a telescope catches your eye")
+        AA1 = str(input("Ask about the telescope (a) Keep Quiet (b)"))
+        if AA1 == "a":
+            print("He continues to explain, it was a gift")
+            print("Passed down in my family for 18 generations")
+            print("Now it is mine, as I was an only child") 
+        elif AA1 == "b":
+            print("Want to go and see the new store next week? you ask")
+            print("I'm am busy next week, but that is intriguing. he says")
+        else:
+#  here R1 outside ot else block
+            R1 = str(input("Ask him if he when he is avalible (a) tell him that you will be leaving now (b)"))        
+            if R1 == "a":
+                print("Your neighbor says sorry, but not any time soon")
+                print("You then leave to go home")
+            elif R1 == "b":
+                print("You say well I will be leaving now")
+                print("I hope you enjoy the cookies")
+            else:
+                print("ERROR! Enter a valid answer and restart")
+    
+elif A1 == "b":
+        print("The cops come to your house in ten minutes")
+        print("They knock on you neighbors door")
+        print("An elderly woman shows up at the door")
+        print("Wait a sec, you think, wasn't the neighbor a man")
+        print("The officer asks how many people live here")
+        print("Just one, says the neighbor, whats going on?") 
+        print("The officer leaves, leaving you in the house with her")
+        
+        AB1 = str(input("Leave immediatly (a) Apologize (b)"))
+        if AB1 == "a":
+            print("You bolt out the door")
+            print("The neighbor stays put")
+            print("You can see her pick up what looks an iphone")
+            print("You tried to read his lips, but")
+            print("You can't understand what she is saying")
+            print("when you look again she is gone")  
+            ABA1 = str(input("Go back secretly to the house (a) Stay and pretend it never happened(b)"))    
+            
+            if ABA1 == "a":
+                print("You go back to the house")
+                print("You look out the windows to see she is there")
+                print("You do but you decide to go and rest")
+                print("Eventually she leaves and quickly go to her house") 
+            elif ABA1 == "b":
+                print("You go home and you turn on the telvison")
+                print("The television is on the food network")
+                print("After a while you fall asleep")
+                print("Then all the sudden you wake up")
+                print("You wake up to your house, your spouse is smiling, had a nice nap? they ask")
+                print("Thank you", n ,"for joining us, but your mission has come to an end")
+                print("Hope you come back!")
+                exit()
+            else:
+                print("ERROR! Enter a valid answer and restart")
+            
+        elif AB1 == "b":
+            print("It's alright, I accept")
+            print("The neighbor lets you have a glass of water")
+            print("You thank her, then leave")
+            print("Later, you feel dizzy when watching telvision")
+            print("You black out, and when you awake you are in what looks like an hotel room. ") 
+            print("A voice booms, should we tell", n,"?")
+            print("Fine, another voice says")
+            print("You wake up and outside the wondow you see the New York skyline, far from where you live")
+            
+        else:
+            print("ERROR! Enter a valid answer and restart")
+else:
+        print("ERROR! Enter a valid answer and restart")
